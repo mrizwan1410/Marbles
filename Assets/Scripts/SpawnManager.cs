@@ -5,11 +5,12 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject enemyPrefab;
+    private float spawnRange = 9f;
 
     private void Start()
     {
-        float spawnPosX = Random.Range(-9, 9);
-        float spawnPosZ = Random.Range(-9, 9);
+        float spawnPosX = Random.Range(-spawnRange, spawnRange);
+        float spawnPosZ = Random.Range(-spawnRange, spawnRange);
         Vector3 randomPos = new Vector3(spawnPosX, 0 , spawnPosZ);
 
         Instantiate(enemyPrefab, randomPos, enemyPrefab.transform.rotation);
