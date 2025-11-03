@@ -741,9 +741,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerup
       objectReference: {fileID: 0}
+    - target: {fileID: 2481099486371783167, guid: e6d115a3743f9cc47a5f98d09967b965, type: 3}
+      propertyPath: m_TagString
+      value: Powerup
+      objectReference: {fileID: 0}
     - target: {fileID: 8039123456734907681, guid: e6d115a3743f9cc47a5f98d09967b965, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.63
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8039123456734907681, guid: e6d115a3743f9cc47a5f98d09967b965, type: 3}
       propertyPath: m_LocalPosition.y
@@ -751,7 +755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8039123456734907681, guid: e6d115a3743f9cc47a5f98d09967b965, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.06
+      value: 5.18
       objectReference: {fileID: 0}
     - target: {fileID: 8039123456734907681, guid: e6d115a3743f9cc47a5f98d09967b965, type: 3}
       propertyPath: m_LocalRotation.w
