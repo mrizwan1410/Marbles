@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,6 +28,12 @@ public class PlayerController : MonoBehaviour
         float forwardInput = Input.GetAxis("Vertical");
         rb.AddForce(focalPoint.transform.forward * forwardInput * speed);
         powerupIndicator.transform.position = transform.position;
+
+        if(transform.position.y < -9)
+        {
+            int gameScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(gameScene);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
